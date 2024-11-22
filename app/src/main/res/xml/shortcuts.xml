@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="id1"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/shortcut_label_1"
+        android:shortcutLongLabel="@string/shortcut_long_label_1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.viewpagerzoomanimation"
+            android:targetClass="com.example.viewpagerzoomanimation.CollapsedSideBarActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="id2"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/shortcut_label_2"
+        android:shortcutLongLabel="@string/shortcut_long_label_2">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.viewpagerzoomanimation"
+            android:targetClass="com.example.viewpagerzoomanimation.MainActivity"
+            android:data="myapp://fragment2"/>
+    </shortcut>
+</shortcuts>
